@@ -2,12 +2,11 @@ package main;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class day2a {
+public class Day2a {
 
     public static boolean isRoundImpossible(String game, int red, int green, int blue){
         List<String> colourList = Arrays.asList(game.split(","));

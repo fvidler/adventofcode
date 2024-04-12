@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class day2b {
+public class Day2b {
 
     public static ArrayList<Integer> isRoundImpossible(String game, ArrayList<Integer> colourRGB){
         List<String> colourList = Arrays.asList(game.split(","));

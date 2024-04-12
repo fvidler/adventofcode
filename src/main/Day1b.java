@@ -1,15 +1,12 @@
 package main;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-public class day1b {
+public class Day1b {
     public static void main(String[] args) {
         Map<String, String> replacementsDictionary = createReplacementsDictionary();
         try (BufferedReader br = new BufferedReader(new FileReader("src/input1a.txt"))) {
