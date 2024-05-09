@@ -2,36 +2,35 @@ package main;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Day3a {
 
-    public String numberFinder(String numberList){
-        numberList = "5";
-        return numberList;
-    }
+    //correct answer: 533775
 
 
-    public void main(String[] args) throws FileNotFoundException {
-        File myObj = new File("src/main/input2a.txt");
+
+    public static void main(String[] args) throws FileNotFoundException {
+        File myObj = new File("src/main/input3a.txt");
         Scanner myReader = new Scanner(myObj);
         int total = 0;
-        String firstRow = null;
-        String secondRow = null;
-        String thirdRow = null;
+        String[] aboveRow = null;
+        String[] activeRow = null;
+        String[] belowRow = myReader.nextLine().split("(?!^)");
 
         while (myReader.hasNextLine()) {
             //may skip last line
-            firstRow = secondRow;
-            secondRow = thirdRow;
-            thirdRow = myReader.nextLine();
-
-            if(secondRow != null) {
-                new numberFinder(secondRow);
-            }
-
+            aboveRow = activeRow;
+            activeRow = belowRow;
+            belowRow = myReader.nextLine().split("(?!^)");
+            total += numberFinder.numberFinder(aboveRow, activeRow, belowRow);
 
         }
+        aboveRow = activeRow;
+        activeRow = belowRow;
+        belowRow = null;
+        total += numberFinder.numberFinder(aboveRow, activeRow, belowRow);
 
 
 
