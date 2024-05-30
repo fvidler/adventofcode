@@ -1,4 +1,4 @@
-package main;
+package com.sainsburys.app;
 
 import java.util.ArrayList;
 import java.util.List;

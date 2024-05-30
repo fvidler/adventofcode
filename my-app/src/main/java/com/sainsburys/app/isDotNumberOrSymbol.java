@@ -1,4 +1,4 @@
-package main;
+package com.sainsburys.app;
 
 public class isDotNumberOrSymbol {
 

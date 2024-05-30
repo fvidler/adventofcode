@@ -1,11 +1,11 @@
-package main;
+package com.sainsburys.app;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Day3a {
+public class Day3b {
 
     //correct answer: 533775
 

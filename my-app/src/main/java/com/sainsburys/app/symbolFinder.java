@@ -1,4 +1,4 @@
-package main;
+package com.sainsburys.app;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,13 +44,14 @@ public class symbolFinder {
                 }
 
                 if(!invalidNumber){
-                    numbersFound += newNumber;
+                    //numbersFound += newNumber;
                     System.out.println(newNumber);
                 }
 
             }
         }
         System.out.println("new row");
-        return numbersFound;
+        //return numbersFound;
+        return symbolsFound;
     }
 }
