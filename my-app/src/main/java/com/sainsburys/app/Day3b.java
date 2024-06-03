@@ -24,7 +24,7 @@ public class Day3b {
             aboveRow = activeRow;
             activeRow = belowRow;
             belowRow = myReader.nextLine().split("(?!^)");
-            total += numberFinder.numberFinder(aboveRow, activeRow, belowRow);
+            total += symbolFinder.symbolFinder(aboveRow, activeRow, belowRow);
 
         }
         aboveRow = activeRow;
