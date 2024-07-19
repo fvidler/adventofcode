@@ -1,4 +1,4 @@
-package main;
+package com.sainsburys.app.day2;
 
 import java.io.File;
 import java.io.FileNotFoundException;

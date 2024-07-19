@@ -1,9 +1,10 @@
 package com.sainsburys.app;
 
 
+import com.sainsburys.app.day3.isDotNumberOrSymbol;
 import org.junit.*;
-import java.util.*;
-import static org.junit.Assert.assertEquals;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Unit test for simple App.

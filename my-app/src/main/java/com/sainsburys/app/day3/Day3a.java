@@ -1,11 +1,10 @@
-package com.sainsburys.app;
+package com.sainsburys.app.day3;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Day3b {
+public class Day3a {
 
     //correct answer: 533775
 
@@ -24,7 +23,7 @@ public class Day3b {
             aboveRow = activeRow;
             activeRow = belowRow;
             belowRow = myReader.nextLine().split("(?!^)");
-            total += symbolFinder.symbolFinder(aboveRow, activeRow, belowRow);
+            total += numberFinder.numberFinder(aboveRow, activeRow, belowRow);
 
         }
         aboveRow = activeRow;
